@@ -1,0 +1,10 @@
+streamlit
+gtts
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, TFAutoModelForSequenceClassification
+from langchain import LLMChain, PromptTemplate, HuggingFacePipeline
+from langchain.memory.buffer import ConversationBufferMemory
+from langchain_core.output_parsers import StrOutputParser
+from peft import PeftModel, LoraConfig, get_peft_model
+import torch
+from gtts import gTTS
+import os
